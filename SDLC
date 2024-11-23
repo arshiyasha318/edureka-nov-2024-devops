@@ -1,0 +1,23 @@
+SDLC --> Software Development Lifecycle
+
+Problem Statement
+Requirements Gathering
+Plan & Design
+Coding
+Build
+Deploy the code to QA env
+Quality Validations --> FT, PT, ST, UAT
+Deploy the code to Production
+Monitor
+Feedback
+
+1980's
+
+SDLC Models
+1. Waterfall
+2. Agile
+3. DevOps --> SDLC Process automation to increase release velocity
+	      Focuses on better collaboration between development and operations team.
+
+Development Operations
+
