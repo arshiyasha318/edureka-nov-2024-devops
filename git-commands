@@ -1,2 +1,83 @@
 sudo su -
 apt update -y
+
+
+
+1  apt update -y
+    2  history
+    3  git clone https://github.com/raushan8586/edureka-demo-project.git
+    4  ls -l
+    5  cd edureka-demo-project/
+    6  ls -l
+    7  git log
+    8  cd ..
+    9  ls -l
+   10  cd edureka-demo-project/
+   11  ls -la
+   12  cd ..
+   13  ls -l
+   14  mkdir project1
+   15  cd project1/
+   16  ls -la
+   17  pwd
+   18  ls -la
+   19  git init
+   20  ls -la
+   21  vi sample1
+   22  car sample1 
+   23  cat sample1 
+   24  ls -l
+   25  pwd
+   26  git status
+   27  git log
+   28  git add sample1 
+   29  git status
+   30  git commit -m "1st-commit"
+   31  git status
+   32  git log
+   33  git config --global user.email "raushan8586.kumar@gmail.com"
+   34  git config --global user.name "Raushan Kumar"
+   35  vi sample2
+   36  cat sample2 
+   37  git add .
+   38  git commit -m "2nd-commit"
+   39  git log
+   40  cd ..
+   41  ls -l
+   42  cd edureka-demo-project/
+   43  git status
+   44  cd ../project1/
+   45  ls -l
+   46  cd ../edureka-demo-project/
+   47  git remote -v
+   48  cd ../project1/
+   49  git remote -v
+   50  git remote add origin https://github.com/raushan8586/edureka-demo-project.git
+   51  git remote -v
+   52  git status
+   53  git push origin master
+   54  git branch
+   55  git pull origin master
+   56  git branch b1 master
+   57  git branch
+   58  git checkout b1
+   59  git log
+   60  git branch
+   61  vi feature1
+   62  cat feature1 
+   63  git add .
+   64  git commit -m "b1-1st-commit"
+   65  git log
+   66  git push origin b1
+   67  git version
+   68  pwd
+   69  ls -l
+   70  git status
+   71  git checkout master
+   72  git pull origin master
+   73  ls -l
+   74  cd ..
+   75  mkdir project2
+   76  cd project2
+   77  git init
+   78  git status
