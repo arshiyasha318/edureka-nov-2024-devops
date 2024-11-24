@@ -1,2 +1,13 @@
 why VCS?
-1. 
+1. To track changes --> who committed the changes, and when the commit was change?
+2. To retrieve accidental deletes
+
+2 types of VCS:
+1. Centralized VCS --> svn
+2. Distributed VCS --> GIT
+
+2 drawbacks for centralised VCS
+1. internet connection all the time
+2. multiple developers cann't work on same file
+
+
