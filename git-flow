@@ -7,3 +7,14 @@ d1, b1
 3. Before we do git add/commit --> repeat step 1 and 2 --> git commit
 4. push local b1 --> remote b1: git push origin b1
 5. create pull request 
+
+
+
+Merge conflict scenario 1 (same file / time difference)
+d1 --> local b1 --> test.java/properties-file --> step 1,2 --> remote b1 --> pull request --> remote master
+d2 --> local b2 --> test.java/properties-file --> step 1,2 --> conflict could happen --> to be resolved manually by d1 and d2
+
+
+Merge conflict scenario 2 (same time /  same file)
+d1 --> local b1 --> test.java/properties-file --> step 1,2 --> remote b1 --> pull request --> remote master
+d2 --> local b2 --> test.java/properties-file --> step 1,2 --> remote b2 --> pull request --> NO reviewer --> merge conflict caught by gitHub
