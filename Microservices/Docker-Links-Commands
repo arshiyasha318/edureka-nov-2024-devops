@@ -1,0 +1,43 @@
+Links
+
+
+
+
+
+
+
+
+
+
+Commands
+
+1  apt update -y
+    2  docker version
+    3  apt install docker.io -y
+    4  docker version
+    5  docker images
+    6  docker ps
+    7  apt install apache2 -y
+    8  docker ps
+    9  lsof -i -P -n | grep LISTEN
+   10  cd /var/www/html/
+   11  ls -l
+   12  vi my-custom-page.html
+   13  cat my-custom-page.html 
+   14  cd ~
+   15  docker images
+   16  docker pull httpd
+   17  docker images
+   18  docker inspect 494b2b45fd74
+   19  lsof -i -P -n | grep LISTEN
+   20  docker run -itd -p 82:80 httpd
+   21  docker ps
+   22  docker exec -it bcd0bb879dd1 /bin/bash
+   23  cd /usr/local/apache2/htdocs
+   24  docker exec -it bcd0bb879dd1 /bin/bash
+   25  docker images
+   26  docker exec -it bcd0bb879dd1 /bin/bash
+   27  docker ps
+   28  docker images
+   29  docker commit bcd0bb879dd1 httpd1
+   30  docker images
