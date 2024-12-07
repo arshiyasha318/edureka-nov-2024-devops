@@ -8,6 +8,9 @@ https://docs.docker.com/reference/cli/docker/container/run/
 Dockerfile
 https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
 
+multi-stage dockerfile
+https://docs.docker.com/build/building/multi-stage/
+
 
 
 
