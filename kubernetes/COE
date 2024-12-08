@@ -1,0 +1,17 @@
+Docker --> Container Engine --> 2015
+
+Container Orchestration Engine --> Kubernetes, Docker Swarm
+
+K8s --> google --> 2015
+  
+2005 - 2015 --> Borg
+
+COE Features
+------------
+1. auto-scaling of containers
+2. auto-healing of containers
+3. auto-load-balancing of requests across all the conatiners
+4. auto-deployment without downtime
+5. auto-scheduling and auto-clustering
+
+  
