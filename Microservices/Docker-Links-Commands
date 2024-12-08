@@ -61,3 +61,162 @@ Commands
    28  docker images
    29  docker commit bcd0bb879dd1 httpd1
    30  docker images
+
+7th Dec
+-------
+   32  docker images
+   33  cd /var/lib/docker
+   34  ls -l
+   35  cd image/
+   36  ls -l
+   37  cd overlay2/
+   38  ls -l
+   39  cd imagedb/
+   40  ls -l
+   41  find /var/lib/docker -name httpd
+   42  find /var/lib/docker -name httpd1
+   43  cd ~
+   44  clear
+   45  docker images
+   46  docker exec -it bcd0bb879dd1 /bin/bash
+   47  ls -l
+   48  mkdir project1
+   49  cd project1/
+   50  ls -l
+   51  clear
+   52  vi Dockerfile
+   53  ls -l
+   54  cat Dockerfile 
+   55  vi index1.html
+   56  ls -l
+   57  docker build . -t httpd2
+   58  docker images
+   59  docker inspect httpd2
+   60  lsof -i -P -n | grep LISTEN
+   61  docker images
+   62  docker run -itd -p 83:80 httpd2
+   63  docker ps
+   64  docker run -itd -p 83:80 httpd
+   65  docker ps
+   66  vi Dockerfile 
+   67  docker rmi httpd2
+   68  docker ps -a
+   69  docker rm -f 988f572709a7
+   70  docker ps -a
+   71  cat Dockerfile 
+   72  docker rmi httpd2
+   73  docker images
+   74  docker build . -t httpd3
+   75  vi Dockerfile 
+   76  docker build . -t httpd4
+   77  docker images
+   78  docker run -itd -p 84:80 httpd4
+   79  docker ps
+   80  docker rm -f 5aabf2006bc8
+   81  docker ps
+   82  cd ..
+   83  mkdir project2
+   84  cd project
+   85  cd project2
+   86  ls -l
+   87  vi Dockerfile
+   88  vi index1.html
+   89  cat Dockerfile 
+   90  docker build . -t ubuntu1
+   91  docker images
+   92  cat Dockerfile 
+   93  docker run -itd --name web1 -p 83:80 ubuntu1
+   94  docker ps
+   95  docker stats
+   96  docker ps
+   97  docker logs 4c7fddde34ea
+   98  docker logs bcd0bb879dd1
+   99  docker ps
+  100  docker inspect 4c7fddde34ea
+  101  docker ps
+  102  docker inspect 212
+  103  docker ps
+  104  docker inspect bcd
+  105  docker network ls
+  106  docker inspect 832c2134654b
+  107  lsof -i -P -n | grep LISTEN
+  108  systemctl status apache2
+  109  cd /var/www/html
+  110  ls -l
+  111  netstat
+  112  apt install net-tools -y
+  113  docker network ls
+  114  docker inspect ff7314cb2737
+
+8th Dec
+----------
+
+docker volume ls
+  117  docker ps
+  118  docker images
+  119  docker volume create edureka-vol
+  120  docker volume ls
+  121  docker run -itd --mount source=edureka-vol,target=/usr/local/apache2/htdocs --name web1 -p 82:80 httpd3
+  122  docker ps -a
+  123  docker rm -f 4c7fddde34ea
+  124  docker run -itd --mount source=edureka-vol,target=/usr/local/apache2/htdocs --name web1 -p 82:80 httpd3
+  125  docker ps
+  126  cd /var/lib/docker
+  127  ls -l
+  128  cd volumes/
+  129  ls -l
+  130  cd edureka-vol/
+  131  ls -l
+  132  cd _data
+  133  ls -l
+  134  vi index2.html
+  135  docker ps
+  136  docker rm -f 9c9a1f7c7e4d
+  137  docker ps
+  138  ls -l
+  139  docker run -itd --mount source=edureka-vol,target=/usr/local/apache2/htdocs --name web2 -p 83:80 httpd3
+  140  docker ps
+  141  df -h
+  142  cd ~
+  143  docker-compose version
+  144  wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
+  145  ls -l
+  146  chmod +x docker-compose-linux-x86_64
+  147  ls -l
+  148  mv docker-compose-linux-x86_64 /usr/bin/docker-compose
+  149  ls -l
+  150  docker-compose version
+  151  docker ps
+  152  docker rm -f 793266203bbc
+  153  docker ps
+  154  ls -l
+  155  mkdir project3
+  156  cd project2
+  157  cd ../project3
+  158  ls -l
+  159  vi docker-compose.yaml
+  160  cat docker-compose.yaml 
+  161  pwd
+  162  docker volume ls
+  163  docker network ls
+  164  docker-compose up -d
+  165  lsof -i -P -n | grep LISTEN
+  166  docker-compose down
+  167  docker ps
+  168  vi docker-compose.yaml 
+  169  docker-compose up -d
+  170  docker network ls
+  171  docker volume ls
+  172  docker images
+  173  docker ps
+  174  pwd
+  175  docker exec -it 90e52dd4abfd /bin/bash
+  176  docker ps
+  177  docker exec -it 3d6d6b9896f6 /bin/bash
+  178  docker ps
+  179  cd /var/lib/docker/volumes/
+  180  ls -l
+  181  docker images
+  182  docker login
+  183  docker image tag httpd3:latest raushan8586/devops-nov-2024:httpd3
+  184  docker image push raushan8586/devops-nov-2024:httpd3
