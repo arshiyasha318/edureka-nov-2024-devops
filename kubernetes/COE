@@ -28,4 +28,13 @@ K8s objects:
     NodePort --> exposes front-end pods
     ClusterIP --> front-end pods and backend pods communication
 
+K8s Architecture
+API Server ---> Gatekeeper
+Scheduler --> schedules K8s objects on nodes
+Controller Manager --> Overall health of the cluster
+etcd --> database --> lighweight, centralized, distributed, key-value pair DB
+
+Kubelet --> makes sure containers are runnig healthy
+kube-proxy --> core networking component in the cluster
+
   
