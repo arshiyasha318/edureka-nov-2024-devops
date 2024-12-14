@@ -8,17 +8,24 @@ K8s --> google --> 2015
 
 COE Features
 ------------
-1. auto-scaling of containers
-2. auto-healing of containers
-3. auto-load-balancing of requests across all the conatiners
-4. auto-deployment without downtime
-5. auto-scheduling and auto-clustering
+1. auto-scaling of pods --> hpa (horizontal pod autoscaler) (k8s object)
+2. auto-healing of pods --> rs (replica set) (k8s object)
+3. auto-load-balancing of requests across all the pods/nodes --> svc (service) (k8s object)
+4. auto-deployment without downtime --> deploy (deployment) (K8s)
+5. auto-scheduling and auto-clustering --> nodeselector, taints, tolerance (K8s)
 
 Kubernetes ~ k8s
 
 Master Node
 worker nodes --> VMs --> K8s objects get deployed in worker nodes
 
-Pods --> have containers, 1 Pod --> 1 container
+K8s objects:
+* Pods --> have containers, 1 Pod --> 1 container
+* ReplicaSet
+* Deployment
+* Services --> to expose the pods --> 
+    loadbalancer --> load balances the traffic across multiple nodes
+    NodePort --> exposes front-end pods
+    ClusterIP --> front-end pods and backend pods communication
 
   
