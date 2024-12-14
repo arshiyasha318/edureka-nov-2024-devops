@@ -14,4 +14,11 @@ COE Features
 4. auto-deployment without downtime
 5. auto-scheduling and auto-clustering
 
+Kubernetes ~ k8s
+
+Master Node
+worker nodes --> VMs --> K8s objects get deployed in worker nodes
+
+Pods --> have containers, 1 Pod --> 1 container
+
   
