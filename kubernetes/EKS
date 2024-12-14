@@ -1,0 +1,45 @@
+3 Command lines are required:
+1. kubectl --> Default command line for kuberntes --> https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+2. aws cli --> https://docs.aws.amazon.com/cli/latest/ --> https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+3. EKSCTL --> command line for AWS EKS --> https://eksctl.io/getting-started/
+--> https://eksctl.io/installation/
+
+Logs:
+https://kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/
+
+
+AWS Documentation --> https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html
+
+Namespaces --> Logical grouping of resources
+
+default           Active   14m
+kube-node-lease   Active   14m
+kube-public       Active   14m
+kube-system       Active   14m
+
+CoreDNS
+CoreDNS is a flexible, extensible DNS server that can serve as the Kubernetes cluster DNS. CoreDNS provides name resolution for all Pods in the cluster. This add-on is installed, by default, on your cluster. For more information, see Working with the CoreDNS Amazon EKS add-on.
+
+kube-proxy
+This add-on maintains network rules on your Amazon EC2 nodes and enables network communication to your Pods. This add-on is installed, by default, on your cluster. For more information, see Working with the Kubernetes kube-proxy add-on.
+
+
+
+Commands
+[cloudshell-user@ip-10-2-79-68 ~]$ history
+    2  aws --version
+    4  kubectl version
+    5  kubectl version --short
+    6  eksctl version
+    7  clear
+
+
+    8  # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+    9  ARCH=amd64
+   10  PLATFORM=$(uname -s)_$ARCH
+   11  curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+   12  # (Optional) Verify checksum
+   13  curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+   14  tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+   15  sudo mv /tmp/eksctl /usr/local/bin
+
