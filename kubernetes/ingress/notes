@@ -20,6 +20,8 @@ Not recommended
 
 Ingress --> path/url based  routing
 
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+
 1. Ingress Controller --> Deploy this in the cluster to read the Ingress resource and its rules
 --> nginx Ingress controller, AWS ALB, Traefik, HA Proxy
 
