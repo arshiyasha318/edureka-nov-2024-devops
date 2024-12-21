@@ -18,3 +18,13 @@ gitHub Repo: https://github.com/raushan8586/pipeline1.git
 
 
    14  cd /var/lib/jenkins/workspace/gitHub-job
+
+Docker-Jobs
+sudo docker build /home/ubuntu/workspace/gitHub-job/ -t httpd1
+
+sudo docker rm -f $(sudo docker ps -a -q)
+sudo docker run -itd -p 82:80 httpd1
+
+If you need to run commands/scripts as root user-->
+jenkins ALL=(ALL) NOPASSWD: ALL    --> Add this line to sudoers file 
+
