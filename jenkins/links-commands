@@ -1,1 +1,20 @@
+Installation
 
+apt update -y
+    2  clear
+    3  apt install fontconfig openjdk-17-jre -y
+    4  java -version
+    5  clear
+    6  wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+    7  ls -l
+    8  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+    9  apt update -y
+   10  apt install jenkins -y
+   11  lsof -i -P -n | grep LISTEN
+   12  cat /var/lib/jenkins/secrets/initialAdminPassword
+   13  clear
+
+gitHub Repo: https://github.com/raushan8586/pipeline1.git
+
+
+   14  cd /var/lib/jenkins/workspace/gitHub-job
