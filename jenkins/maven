@@ -1,0 +1,32 @@
+Installation
+https://maven.apache.org/download.cgi
+https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
+
+
+tar xvzf apache-maven-3.9.9-bin.tar.gz
+   51  ls -l
+   52  mv apache-maven-3.9.9 /opt/
+   53  cd /opt
+   54  ls -l
+   55  mv apache-maven-3.9.9 maven
+   56  ls -l
+   57  mvn -version
+   58  M3_HOME='/opt/maven'
+   60  echo $PATH
+   61  PATH="$M3_HOME/bin:$PATH"
+   62  export PATH
+   63  echo $PATH
+   64  mvn -version
+
+
+   install jenkins-maven plugin
+
+   Tools --> Add the entry for maven
+
+   Goals --> clean package
+
+   maven build lifecycle?
+
+
+
+
