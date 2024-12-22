@@ -24,9 +24,15 @@ tar xvzf apache-maven-3.9.9-bin.tar.gz
 
    Tools --> Add the entry for maven
 
+https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+clean --> handles project cleaning
+default --> various phases --> validate, compile, test, package, verify, install, deploy
+site -->  creation of your project's web site (documentation)
+
    Goals --> clean package
 
-   maven build lifecycle?
+
 
 
 
