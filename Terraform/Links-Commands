@@ -8,3 +8,18 @@ Environment variables
 terraform -version
 
 https://code.visualstudio.com/download
+
+Provider
+https://registry.terraform.io/browse/providers
+
+
+required_providers
+provider
+resource
+
+
+terraform init
+terraform plan
+
+terraform apply
+terraform destroy
