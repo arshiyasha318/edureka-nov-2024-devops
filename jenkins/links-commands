@@ -33,3 +33,7 @@ jenkinsfile
 https://www.jenkins.io/doc/book/pipeline/getting-started/
 https://www.jenkins.io/doc/book/pipeline/syntax/
 
+jenkinsfile samples
+https://devopspilot.com/jenkins/pipelines/40-jenkinsfile-to-build-maven-project-and-deploy-to-tomcat/
+https://devopspilot.com/jenkins/pipelines/50-jenkinsfile-to-build-docker-image-push-deploy-to-same-server/
+
