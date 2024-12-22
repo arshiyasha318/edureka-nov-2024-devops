@@ -28,3 +28,8 @@ sudo docker run -itd -p 82:80 httpd1
 If you need to run commands/scripts as root user-->
 jenkins ALL=(ALL) NOPASSWD: ALL    --> Add this line to sudoers file 
 
+
+jenkinsfile
+https://www.jenkins.io/doc/book/pipeline/getting-started/
+https://www.jenkins.io/doc/book/pipeline/syntax/
+
