@@ -22,6 +22,8 @@ Installation:
     5  apt install ansible -y
     6  ansible --version
 
+Links
+https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
 
 
 hosts file
@@ -40,6 +42,9 @@ Adhoc Commands
 
 Ansible Playbook
 Ansible Roles
+
+
+
 
 
 
