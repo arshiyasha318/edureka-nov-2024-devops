@@ -107,6 +107,10 @@ Commands to refer -->
    54  ls -l
    55  cat disk.txt
 
+60  vi first-playbook.yaml
+   61  ansible-playbook first-playbook.yaml --syntax-check
+   62  ansible-playbook first-playbook.yaml
+
 
 
 
