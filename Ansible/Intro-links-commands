@@ -51,6 +51,8 @@ Ansible Roles --> complex tasks with multiple playbooks
   Framework --> strauctured way of automating tasks
             --> playbooks, variable, files, notifiers and handlers
 
+ansible-galaxy init app1
+
 https://github.com/raushan8586/ansible/tree/ansible-role
 
 
