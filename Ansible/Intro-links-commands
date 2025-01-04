@@ -21,3 +21,15 @@ Installation:
     4  sudo add-apt-repository --yes --update ppa:ansible/ansible
     5  apt install ansible -y
     6  ansible --version
+
+
+
+hosts file
+[dev]
+host1 ansible_ssh_host=65.2.6.86
+host2 ansible_ssh_host=43.204.236.8
+
+
+
+
+
