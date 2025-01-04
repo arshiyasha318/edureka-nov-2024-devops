@@ -12,3 +12,5 @@ Before Ansible -->
 chef
 Puppet
 
+Ansible is agentless
+
