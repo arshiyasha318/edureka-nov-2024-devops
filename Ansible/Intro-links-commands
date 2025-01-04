@@ -14,3 +14,10 @@ Puppet
 
 Ansible is agentless
 
+Installation:
+1  apt update -y
+    2  python3 --version
+    3  sudo apt install software-properties-common
+    4  sudo add-apt-repository --yes --update ppa:ansible/ansible
+    5  apt install ansible -y
+    6  ansible --version
