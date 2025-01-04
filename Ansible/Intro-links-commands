@@ -32,7 +32,8 @@ host1 ansible_ssh_host=65.2.6.86
 host2 ansible_ssh_host=43.204.236.8
 
 
-Adhoc Commands
+Adhoc Commands --> simple tasks across multiple hosts
+
   ansible -m ping host1
   ansible -m ping dev
 
@@ -40,11 +41,15 @@ Adhoc Commands
   ansible -m shell -a "free -h" dev
 
 
-Ansible Playbook
+Ansible Playbook --> complex tasks across different hosts
+
+  ansible-playbook first-playbook.yaml --syntax-check
+  ansible-playbook first-playbook.yaml
 
 
-
-Ansible Roles
+Ansible Roles --> complex tasks with multiple playbooks
+  Framework --> strauctured way of automating tasks
+            --> playbooks, variable, files, notifiers and handlers
 
 
 
