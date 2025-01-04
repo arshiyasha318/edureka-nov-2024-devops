@@ -1,0 +1,14 @@
+Ansible --> Configuration Management Tool (CMT)
+
+Application is a runnig 
+  in a VM --> AMI
+  as a container --> Container image
+
+For the changes required in a VM
+--> security patches
+--> updating java versions
+
+Before Ansible -->
+chef
+Puppet
+
