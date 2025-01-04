@@ -30,6 +30,18 @@ host1 ansible_ssh_host=65.2.6.86
 host2 ansible_ssh_host=43.204.236.8
 
 
+Adhoc Commands
+  ansible -m ping host1
+  ansible -m ping dev
+
+  ansible -m shell -a "free -h" host1
+  ansible -m shell -a "free -h" dev
+
+
+Ansible Playbook
+Ansible Roles
+
+
 
 
 
