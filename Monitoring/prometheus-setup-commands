@@ -36,6 +36,25 @@ root@ip-172-31-32-167:~/prometheus-2.45.1.linux-amd64# history
    33  lsof -i -P -n | grep LISTEN
    34  sudo ufw allow 9090/tcp
 
+prometheus.service-->
+[Unit]
+Description=Prometheus
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/usr/local/bin/prometheus \
+    --config.file /etc/prometheus/prometheus.yml \
+    --storage.tsdb.path /var/lib/prometheus/ \
+    --web.console.templates=/etc/prometheus/consoles \
+    --web.console.libraries=/etc/prometheus/console_libraries
+
+[Install]
+WantedBy=multi-user.target
+
 
 Node-Exporter:
 40  cd ..
