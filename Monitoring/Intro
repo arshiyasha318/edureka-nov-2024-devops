@@ -14,3 +14,14 @@ Role of DevOps / SRE Engineer -->
 4. setup Alerts and acting on alerts and SOPs (Standard Operating Procedures)
 
 --> Prometheus & Grafana
+
+General Architecture of Monitoring tool -->
+
+* Database to store metrics
+* Agents on the datasources
+* Visualization tool
+
+Prometheus --> DB
+Grafana --> Visualization tool
+NodeExporter ---> agent 
+
