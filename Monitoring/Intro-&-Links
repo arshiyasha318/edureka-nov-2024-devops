@@ -30,4 +30,6 @@ influxDB
 
 
 https://prometheus.io/docs/introduction/overview/
+https://prometheus.io/docs/instrumenting/clientlibs/
+https://prometheus.io/docs/instrumenting/exporters/
 
