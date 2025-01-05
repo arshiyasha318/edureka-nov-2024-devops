@@ -1,6 +1,4 @@
-Walkthrough the Deployment architecture worked recently
---------------------------------------------------------
-
+Walkthrough: Application Architecture, Deployment Architecture
 
 1. GIT --> Make your OWN notes with STANDARD definitions
   https://www.interviewbit.com/git-interview-questions/
@@ -10,17 +8,17 @@ Walkthrough the Deployment architecture worked recently
 
 3. Containerization --> Docker Architecture, Docker Commands
   https://www.interviewbit.com/docker-interview-questions/
+
+Dockerfile --> ADD vs COPY, CMD vs ENTRYPOINT
   
 
 4. Kubernetes
   https://www.interviewbit.com/kubernetes-interview-questions/
   
-
   --> Kubernetes Ingress. How is it different from LoadBalancer? API Gateway/LoadBalancer/Kubernetes Ingress
 
 5. Terraform
   https://www.interviewbit.com/terraform-interview-questions/
-  https://intellipaat.com/blog/interview-question/terraform-interview-questions/#4
 
 provider, resource, modules, provisioner, provider Vs provisioner
 
@@ -32,7 +30,6 @@ provider, resource, modules, provisioner, provider Vs provisioner
 7. Jenkins
   https://www.interviewbit.com/jenkins-interview-questions/
  
-  
 --> jenkinsfile --> Have few examples
 
 GitHub Actions:
@@ -51,8 +48,6 @@ https://www.youtube.com/watch?v=f5EpcWp0THw&pp=ygUGZ2l0b3Bz
 
 10. Applications Servers (Deployment)
   Tomcat  --> https://www.baeldung.com/tomcat-deploy-war
-  weblogic --> Experienced Professionals
-
 
 6+ yrs -->
 Python Scripting
