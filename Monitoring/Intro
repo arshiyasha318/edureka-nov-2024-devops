@@ -25,3 +25,6 @@ Prometheus --> DB
 Grafana --> Visualization tool
 NodeExporter ---> agent 
 
+Prometheus --> time-series DB
+influxDB
+
