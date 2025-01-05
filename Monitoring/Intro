@@ -23,7 +23,7 @@ General Architecture of Monitoring tool -->
 
 Prometheus --> DB
 Grafana --> Visualization tool
-NodeExporter ---> agent 
+Exporters ---> agent 
 
 Prometheus --> time-series DB
 influxDB
