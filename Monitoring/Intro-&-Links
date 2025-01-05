@@ -36,3 +36,5 @@ https://prometheus.io/docs/instrumenting/exporters/
 Installation:
 https://prometheus.io/download/
 
+Grafana Dashboard --> https://grafana.com/grafana/dashboards/1860-node-exporter-full/
+
