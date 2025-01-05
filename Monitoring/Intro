@@ -1,0 +1,16 @@
+continuous monitoring --> why?
+
+1. Server Health --> uptime, CPU, Memory, Disk
+2. Performance --> Response time, Status code, Errors
+3. Troubleshoot applications
+4. Alerts
+
+
+Role of DevOps / SRE Engineer -->
+
+1. Proof of concept (POC)
+2. Setup/install monitoring tool
+3. Create Dashboards for metrics --> uptime, CPU, Memory, Disk, Response time, Status code, Errors,..
+4. setup Alerts and acting on alerts and SOPs (Standard Operating Procedures)
+
+--> Prometheus & Grafana
